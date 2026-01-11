@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Website Desa Kiarapedes</title>
+</head>
+<body>
+
+    <header>
+        <a href="beranda.html" class="logo">DESA <span>KIARAPEDES</span></a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="denah_desa.html">Denah Desa</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                <li><a href="berita_desa.html">Berita</a></li>
+                <li><a href="data_desa.html">Data Desa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <h1>DESA KIARAPEDES</h1>
+        <p>Keindahan alam yang asri berpadu dengan kearifan lokal yang terjaga.</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">Tentang Desa Kami</h2>
+        <p>
+            Desa Kiarapedes terletak di kaki gunung yang indah, menawarkan suasana yang tenang dan udara yang sejuk. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </section>
+
+    <section id="features">
+        <h2 class="section-title">Fasilitas & Layanan</h2>
+        <div class="cards-container">
+            <a href="#lapangan-panca-waluya" class="card" aria-label="Lapangan Panca Waluya">
+                <img src="gambar/lapangan_papan.jpeg" alt="Lapangan Panca Waluya">
+                <div class="card-content">
+                    <h3>Lapangan Panca Waluya</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+                </div>
+            </a>
+            <div class="card">
+                <img src="gambar/masjid_jami.jpeg" alt="masjid jami al baroqah">
+                <div class="card-content">
+                    <h3>Masjid Jami Al Baroqah</h3>
+                    <p>Cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare. Enim ut sem viverra aliquet eget sit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="gambar/sdn1_kiarapedes.jpg" alt="sdn 1 kiarapedes">
+                <div class="card-content">
+                    <h3>Pendidikan</h3>
+                    <p>Morbi tincidunt augue interdum velit euismod. Non tellus orci ac auctor augue mauris augue neque gravida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="slideshow-section">
+        <h2 class="section-title">Galeri Desa</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="gambar/sawah2.jpg" alt="Pemandangan 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="gambar/lapangan.jpeg" alt="Pemandangan 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="gambar/sawah1.jpg" alt="Pemandangan 3">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <section id="details">
+        <h2 class="section-title">Informasi Desa</h2>
+        <div class="details-container">
+            <div class="details-text">
+                <h2>Anti Korupsi</h2>
+                <p>
+                    Desa Kiarapedes menjadi contoh dalam penerapan prinsip anti korupsi di tingkat desa. 
+                    Kami berkomitmen untuk menjalankan pemerintahan yang bersih, transparan, dan akuntabel demi kesejahteraan masyarakat.
+                </p>
+                <br>
+                <p>
+                    Dengan adanya sistem pengelolaan keuangan desa yang terbuka, warga dapat dengan mudah mengakses informasi mengenai penggunaan anggaran desa. 
+                    Partisipasi aktif masyarakat dalam pengawasan kegiatan desa juga menjadi kunci keberhasilan kami dalam memberantas korupsi.
+                </p>
+            </div>
+            <div class="details-image">
+                <img src="gambar/kantor_kecamatan.jpg" alt="Kantor Kecamatan">
+            </div>
+        </div>
+        <div class="details-container reverse">
+            <div class="details-text">
+                <h2>Lapangan Panca Waluya</h2>
+                <p>
+                    Lapangan Panca Waluya adalah pusat kegiatan olahraga dan rekreasi di Desa Kiarapedes. 
+                    Fasilitas ini mendukung gaya hidup sehat dan mempererat tali persaudaraan antar warga desa.
+                </p>
+                <br>
+                <p>
+                    Dengan berbagai kegiatan yang diadakan di lapangan ini, warga dapat berpartisipasi aktif dalam menjaga kebugaran fisik sekaligus memperkuat ikatan sosial dalam komunitas.
+                </p>
+            </div>
+            <div id="lapangan-panca-waluya" class="details-image">
+                <img src="gambar/lapangan.jpeg" alt="Lapangan Panca Waluya">
+            </div>
+        </div>
+        <div class="details-container">
+            <div class="details-text">
+                <h2>Pendidikan</h2>
+                <p>
+                    Desa Kiarapedes sangat mementingkan pendidikan sebagai fondasi pembangunan desa. 
+                    Kami menyediakan fasilitas pendidikan yang memadai dan mendukung proses belajar mengajar bagi anak-anak di desa kami.
+                </p>
+                <br>
+                <p>
+                    Terdapat 2 sekolah dasar di desa kami, yaitu SDN 1 Kiarapedes dan SDN 2 Kiarapedes, 1 sekolah menengah pertama, yaitu SMPN 1 Kiarapedes, serta sekolah menengah kejuruan yaitu SMKN Kiarapedes.
+                </p>
+            </div>
+            <div class="details-image">
+                <img src="gambar/sdn1_kiarapedes.jpg" alt="SDN 1 Kiarapedes">
+            </div>
+        </div>
+        <div class="details-container reverse">
+            <div class="details-text">
+                <h2>Lapangan Panca Waluya</h2>
+                <p>
+                    Lapangan Panca Waluya adalah pusat kegiatan olahraga dan rekreasi di Desa Kiarapedes. 
+                    Fasilitas ini mendukung gaya hidup sehat dan mempererat tali persaudaraan antar warga desa.
+                </p>
+                <br>
+                <p>
+                    Dengan berbagai kegiatan yang diadakan di lapangan ini, warga dapat berpartisipasi aktif dalam menjaga kebugaran fisik sekaligus memperkuat ikatan sosial dalam komunitas.
+                </p>
+            </div>
+            <div id="lapangan-panca-waluya" class="details-image">
+                <img src="gambar/lapangan.jpeg" alt="Lapangan Panca Waluya">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Pemerintah Desa Kiarapedes. Hak Cipta Dilindungi.</p>
+        <p>Jalan Raya Utama No. 1, Kecamatan Sejahtera</p>
+    </footer>
+
+    <script>
+        // --- Mobile Menu Logic ---
+        function toggleMenu() {
+            var nav = document.getElementById("nav-list");
+            nav.classList.toggle("active");
+        }
+
+        // --- Slideshow Logic ---
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+
+        // Auto slide setiap 5 detik (Opsional, hapus jika tidak ingin otomatis)
+        setInterval(function() {
+            plusSlides(1);
+        }, 5000);
+    </script>
+</body>
+</html>

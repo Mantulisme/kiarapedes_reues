@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="css/styles_denah.css">
+    <title>Denah Desa Kiarapedes</title>
+</head>
+<body>
+    <header>
+        <a href="beranda.html" class="logo">DESA <span>KIARAPEDES</span></a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="denah_desa.html">Denah Desa</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                <li><a href="berita_desa.html">Berita</a></li>
+                <li><a href="data_desa.html">Data Desa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2 class="section-title">Denah Desa Kiarapedes</h2>
+    </section>
+    <section id="denah-section" class="map-wrapper">
+    <div id="map-container"></div>
+
+    <div id="side-panel" class="side-panel">
+        <button id="close-btn" class="close-btn">&times;</button>
+        <div id="panel-content">
+            </div>
+    </div>
+    </section>
+    <section id="about" class="about">
+        <p>
+            Denah Desa Kiarapedes menggambarkan tata letak geografis dan infrastruktur penting di desa kami.
+            Denah ini mencakup lokasi fasilitas umum seperti sekolah, masjid, balai desa, serta area pertanian dan pemukiman warga.
+            Dengan denah ini, diharapkan masyarakat dan pengunjung dapat lebih mudah menavigasi dan memahami struktur desa kami.
+        </p>
+    </section>
+<script src="js/denah.js"></script>
+</body>
+</html>
