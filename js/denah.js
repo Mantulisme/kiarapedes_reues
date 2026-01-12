@@ -1,6 +1,8 @@
 var map = L.map("map-container", {
     crs: L.CRS.Simple,
-    minZoom: -1
+    minZoom: -2.8,
+    maxZoom: 2,
+    zoomControl: true
 });
 
 var bounds = [[0,0], [2500, 2500]];
