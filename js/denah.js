@@ -49,13 +49,25 @@ var lokasi = [
     {
         nama: "Masjid Jami Al Baroqah",
         koordinat: [691, 807],
-        foto: "../gambar/smk.jpg",
+        foto: "../gambar/masjid_jami.jpeg",
         deskripsi: "SMK Negeri 1 Kiarapedes adalah sekolah menengah kejuruan yang menyelenggarakan pendidikan dan pelatihan di bidang teknologi informasi dan komunikasi."
     },
     {
         nama: "SDN 1 Kiarapedes",
         koordinat: [964, 1127],
-        foto: "../gambar/smk.jpg",
+        foto: "../gambar/sdn1_kiarapedes.jpg",
+        deskripsi: "SMK Negeri 1 Kiarapedes adalah sekolah menengah kejuruan yang menyelenggarakan pendidikan dan pelatihan di bidang teknologi informasi dan komunikasi."
+    },
+    {
+        nama: "SDN 2 Kiarapedes",
+        koordinat: [1340, 1105],
+        foto: "../gambar/sdn1_kiarapedes.jpg",
+        deskripsi: "SMK Negeri 1 Kiarapedes adalah sekolah menengah kejuruan yang menyelenggarakan pendidikan dan pelatihan di bidang teknologi informasi dan komunikasi."
+    },
+    {
+        nama: "Pengajian Miftahul Huda",
+        koordinat: [1450, 1074],
+        foto: "../gambar/sdn1_kiarapedes.jpg",
         deskripsi: "SMK Negeri 1 Kiarapedes adalah sekolah menengah kejuruan yang menyelenggarakan pendidikan dan pelatihan di bidang teknologi informasi dan komunikasi."
     }
 ]
