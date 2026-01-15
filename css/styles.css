@@ -112,14 +112,69 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-    .dropdown-content {
-        position: static;
-        display: block;
-        box-shadow: none;
-        background-color: #fafafa;
-        padding-left: 20px;
-    }
-}
+            .menu-toggle {
+                display: block;
+            }
+
+            /* Hide navigation by default */
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                padding: 0;
+            }
+
+            /* Show navigation when active */
+            nav ul.active {
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 0;
+                text-align: center;
+                padding: 0;
+                border-bottom: 1px solid #f1f1f1;
+            }
+
+            nav ul li a {
+                display: block;
+                padding: 15px 0;
+            }
+
+            /* CRITICAL: Disable desktop hover on mobile */
+            .dropdown:hover .dropdown-content {
+                display: none;
+            }
+
+            /* Hide dropdown content by default */
+            .dropdown-content {
+                display: none !important;
+                position: static;
+                box-shadow: none;
+                background-color: #fafafa;
+                padding: 0;
+                margin: 0;
+            }
+
+            /* Show dropdown when parent has active class */
+            .dropdown.active .dropdown-content {
+                display: block !important;
+            }
+
+            .dropdown-content li {
+                border-bottom: 1px solid #e0e0e0;
+            }
+
+            .dropdown-content li a {
+                padding: 12px 0 12px 30px;
+                text-align: left;
+            }
+        }
 
 /* Mobile Menu Button */
 .menu-toggle {

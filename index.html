@@ -150,7 +150,7 @@
                     Desa Kiarapedes telah melakukan tahap dalam menanggunalangi permasalahan sampah melalui inovasi
                     pengelolaan limbah yang dijadikan lokal karya.
                     Salah satu inovasi yang diterapkan adalah penggunaan incinerator untuk membakar sampah plastik
-                    dan menggunakan sisa abu untuk pembuatan paving block.
+                    dan menggunakan sisa abu pembakaran untuk membuat paving block.
                 </p>
                 <br>
                 <p>
@@ -165,40 +165,62 @@
 
     <footer>
         <p>&copy; 2026 Pemerintah Desa Kiarapedes. Hak Cipta Dilindungi.</p>
-        <p>Jalan Raya Utama No. 1, Kecamatan Sejahtera</p>
+        <p>Jalan Raya Utama No. 1, Kecamatan Kiarapedes</p>
     </footer>
 
     <script>
-        // --- Mobile Menu Logic ---
-        function toggleMenu() {
-            var nav = document.getElementById("nav-list");
-            nav.classList.toggle("active");
+    // --- Mobile Menu Logic ---
+    function toggleMenu() {
+        var nav = document.getElementById("nav-list");
+        nav.classList.toggle("active");
+    }
+
+    // --- Mobile Dropdown Logic ---
+    document.addEventListener('DOMContentLoaded', function() {
+        const dropdown = document.querySelector('.dropdown');
+        const dropbtn = document.querySelector('.dropbtn');
+        
+        if (dropdown && dropbtn) {
+            dropbtn.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                }
+            });
         }
-
-        // --- Slideshow Logic ---
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
+        
+        // Reset dropdown state on window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                dropdown.classList.remove('active');
             }
-            slides[slideIndex-1].style.display = "block";  
-        }
+        });
+    });
 
-        // Auto slide setiap 5 detik (Opsional, hapus jika tidak ingin otomatis)
-        setInterval(function() {
-            plusSlides(1);
-        }, 10000);
-    </script>
+    // --- Slideshow Logic ---
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndex-1].style.display = "block";  
+    }
+
+    // Auto slide setiap 10 detik
+    setInterval(function() {
+        plusSlides(1);
+    }, 10000);
+</script>
+<script src="js/header.js"></script>
 </body>
 </html>
