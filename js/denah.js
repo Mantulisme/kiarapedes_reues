@@ -26,13 +26,13 @@ var lokasi = [
         nama: "SMK Negeri 1 Kiarapedes",
         koordinat: [1066, 666],
         foto: "../gambar/smk.jpg",
-        deskripsi: "SMK Negeri 1 Kiarapedes adalah sekolah menengah kejuruan yang menyelenggarakan pendidikan dan pelatihan di bidang teknologi informasi dan komunikasi."
+        deskripsi: "SMK Negeri 1 Kiarapedes adalah sekolah menengah kejuruan yang menyelenggarakan pendidikan dan pelatihan di berbagai bidang seperti teknologi informasi dan komunikasi."
     },
     {
         nama: "Sate Maranggi Pareang",
         koordinat: [1132, 485],
-        foto: "../gambar/smk.jpg",
-        deskripsi: "SMK Negeri 1 Kiarapedes adalah sekolah menengah kejuruan yang menyelenggarakan pendidikan dan pelatihan di bidang teknologi informasi dan komunikasi."
+        foto: "../gambar/sate_maranggi_pareang.jpeg",
+        deskripsi: "Restoran Sate Maranggi Pareang terkenal dengan hidangan sate maranggi khas Kiarapedes yang lezat dan autentik."
     },
     {
         nama: "Kantor Kecamatan Kiarapedes",
@@ -44,31 +44,31 @@ var lokasi = [
         nama: "KUA Kecamatan Kiarapedes",
         koordinat: [1006, 820],
         foto: "../gambar/smk.jpg",
-        deskripsi: "SMK Negeri 1 Kiarapedes adalah sekolah menengah kejuruan yang menyelenggarakan pendidikan dan pelatihan di bidang teknologi informasi dan komunikasi."
+        deskripsi: "KUA Kecamatan Kiarapedes adalah tempat untuk kegiatan keagamaan di tingkat kecamatan."
     },
     {
         nama: "Masjid Jami Al Baroqah",
         koordinat: [691, 807],
         foto: "../gambar/masjid_jami.jpeg",
-        deskripsi: "SMK Negeri 1 Kiarapedes adalah sekolah menengah kejuruan yang menyelenggarakan pendidikan dan pelatihan di bidang teknologi informasi dan komunikasi."
+        deskripsi: "Masjid Jami Al Baroqah adalah tempat ibadah umat Muslim yang menjadi pusat kegiatan keagamaan di Kiarapedes."
     },
     {
         nama: "SDN 1 Kiarapedes",
         koordinat: [964, 1127],
         foto: "../gambar/sdn1_kiarapedes.jpg",
-        deskripsi: "SMK Negeri 1 Kiarapedes adalah sekolah menengah kejuruan yang menyelenggarakan pendidikan dan pelatihan di bidang teknologi informasi dan komunikasi."
+        deskripsi: "SDN 1 Kiarapedes adalah sekolah dasar yang menyelenggarakan pendidikan dasar di wilayah Kiarapedes."
     },
     {
         nama: "SDN 2 Kiarapedes",
         koordinat: [1340, 1105],
         foto: "../gambar/sdn1_kiarapedes.jpg",
-        deskripsi: "SMK Negeri 1 Kiarapedes adalah sekolah menengah kejuruan yang menyelenggarakan pendidikan dan pelatihan di bidang teknologi informasi dan komunikasi."
+        deskripsi: "SDN 2 Kiarapedes adalah sekolah dasar yang menyelenggarakan pendidikan dasar di wilayah Kiarapedes."
     },
     {
         nama: "Pengajian Miftahul Huda",
         koordinat: [1450, 1074],
         foto: "../gambar/sdn1_kiarapedes.jpg",
-        deskripsi: "SMK Negeri 1 Kiarapedes adalah sekolah menengah kejuruan yang menyelenggarakan pendidikan dan pelatihan di bidang teknologi informasi dan komunikasi."
+        deskripsi: "Pengajian Miftahul Huda adalah tempat untuk kegiatan pengajian dan kegiatan keagamaan di Kiarapedes."
     }
 ]
 

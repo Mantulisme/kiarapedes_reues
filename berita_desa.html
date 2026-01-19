@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header_styles.css">
+    <link rel="stylesheet" href="css/berita_styles.css">
+    <link rel="icon" type="image/x-icon" href="../gambar/favicon.ico">
+    <title>Berita Desa Kiarapedes</title>
+</head>
+<header>
+    <a href="index.html" class="logo">DESA <span>KIARAPEDES</span></a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+        <ul id="nav-list">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="denah_desa.html">Denah Desa</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Media Sosial</a>
+                <ul class="dropdown-content">
+                    <li><a href="https://www.tiktok.com" target="_blank">Tik Tok</a></li>
+                    <li><a href="https://www.instagram.com/pemdeskiarapedes?igsh=MTFtYXl1ZGNtZzlqYQ==" target="_blank">Instagram</a></li>
+                    <li><a href="https://youtube.com/@dkiarachannel46?si=5COZNuTIQA35OYF-" target="_blank">YouTube</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                </ul>
+            </li>
+            <li><a href="berita_desa.html">Berita Desa</a></li>
+            <li><a href="data_desa.html">Data Desa</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section style="margin-top: 100px; padding: 0 5%;">
+        <h2 class="section-title">Berita Kiarapedes</h2>
+        
+        <div id="news-container" class="news-grid">
+            </div>
+
+        <div id="loading" style="text-align: center; display: none; padding: 20px;">
+            <p>Memuat berita lainnya...</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 Pemerintah Desa Kiarapedes. Hak Cipta Dilindungi.</p>
+        <p>Jalan Raya Utama No. 1, Kecamatan Kiarapedes</p>
+    </footer>
+    <script src="js/berita.js"></script>
+</body>
+</html>
