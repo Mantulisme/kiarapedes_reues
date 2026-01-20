@@ -13,7 +13,7 @@ var lokasi = [
     {
         nama: "Kantor Desa Kiarapedes",
         koordinat: [880, 1090],
-        foto: "../gambar/kantor_desa.jpg",
+        foto: "../gambar/kantor_desa.jpeg",
         deskripsi: "Kantor Desa Kiarapedes adalah pusat administrasi dan pelayanan masyarakat desa."
     },
     {
@@ -38,12 +38,12 @@ var lokasi = [
         nama: "Kantor Kecamatan Kiarapedes",
         koordinat: [212, 505],
         foto: "../gambar/kantor_kecamatan.jpg",
-        deskripsi: "Kantor Kecamatan Kiarapedes adalah pusat administrasi dan pelayanan masyarakat di tingkat kecamatan."
+        deskripsi: "Kantor Kecamatan Kiarapedes adalah pusat administrasi dan pelayanan masyarakat di tingkat kecamatan. Terdapat Puskesmas, Polsek, dan Sekretariat Kecamatan di sekitarnya."
     },
     {
         nama: "KUA Kecamatan Kiarapedes",
         koordinat: [1006, 820],
-        foto: "../gambar/smk.jpg",
+        foto: "../gambar/kua.jpeg",
         deskripsi: "KUA Kecamatan Kiarapedes adalah tempat untuk kegiatan keagamaan di tingkat kecamatan."
     },
     {
@@ -61,13 +61,13 @@ var lokasi = [
     {
         nama: "SDN 2 Kiarapedes",
         koordinat: [1340, 1105],
-        foto: "../gambar/sdn1_kiarapedes.jpg",
-        deskripsi: "SDN 2 Kiarapedes adalah sekolah dasar yang menyelenggarakan pendidikan dasar di wilayah Kiarapedes."
+        foto: "../gambar/SDN2.jpeg",
+        deskripsi: "SDN 2 Kiarapedes adalah sekolah dasar asri yang menyelenggarakan pendidikan dasar di wilayah Kiarapedes."
     },
     {
         nama: "Pengajian Miftahul Huda",
         koordinat: [1450, 1074],
-        foto: "../gambar/sdn1_kiarapedes.jpg",
+        foto: "../gambar/miftahul_huda.jpeg",
         deskripsi: "Pengajian Miftahul Huda adalah tempat untuk kegiatan pengajian dan kegiatan keagamaan di Kiarapedes."
     }
 ]
