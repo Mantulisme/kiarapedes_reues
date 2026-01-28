@@ -16,6 +16,7 @@ async function loadNewsFromJson() {
                 const card = `
                     <div class="news-card">
                         <div class="news-content">
+                            <img style="max-width:400px; border-radius: 10px" src="${news.image}" alt="News"> 
                             <h3>${news.title}</h3>
                             <small>${news.date}</small>
                             <br>

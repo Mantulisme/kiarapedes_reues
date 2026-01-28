@@ -19,10 +19,8 @@
     transform: translateY(-8px);
 }
 
-.news-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+img{
+    width: 100px;
 }
 
 .news-content {

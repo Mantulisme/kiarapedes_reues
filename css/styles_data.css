@@ -83,7 +83,7 @@
             text-align: center;
             margin-bottom: 2rem;
             color: var(--primary-green);
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             position: relative;
         }
         
@@ -94,6 +94,12 @@
             height: 3px;
             background: var(--primary-blue);
             margin: 10px auto 0;
+        }
+
+        @media (max-width: 1920px) {
+            .section-subtitle{
+                font-size: 1.5rem;
+            }
         }
 
         /* --- DESCRIPTION SECTION --- */
@@ -121,21 +127,56 @@
 
         /* --- DATA --- */
         .data-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
             margin-top: 20px;
             margin-bottom: 100px;
         }
         .data-card {
+            flex: 0 1 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             background: #f9f9f9;
             padding: 20px;
             border-radius: 10px;
             border-left: 5px solid var(--primary-blue);
             box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            max-width: 350px;
         }
-        .data-card h3 { color: var(--text-light); font-size: 0.9rem; text-transform: uppercase; }
-        .data-card p { font-size: 1.8rem; font-weight: bold; color: var(--primary-green); }
+        .data-card h3 {
+            color: var(--text-light);
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .data-card p {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-green);
+        }
+
+        @media (max-width: 768px) {
+            .data-card h3{
+                font-size: 0.8rem;
+            }
+            .data-card p{
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 1920px) {
+            .data-card h3{
+                font-size: 1rem;
+            }
+            .data-card p{
+                font-size: 1.8rem;
+            }
+        }
         
         .data-table {
             width: 100%;
@@ -147,8 +188,15 @@
             padding: 12px;
             border: 1px solid #ddd;
             text-align: left;
+            font-size: 2rem;
         }
         .data-table th { background: var(--primary-green); color: white; }
+
+        @media (max-width: 1920px) {
+            .data-table th, .data-table td {
+                font-size: 1.5rem;
+            }
+        }
 
         .data-list {
         margin-left: 25px;
@@ -164,7 +212,7 @@
 
         .data-source {
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 1.4rem;
             color: var(--text-light);
             margin-top: -20px;
         }
@@ -173,6 +221,7 @@
 .tree {
     width: 100%;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .tree ul {
@@ -251,6 +300,47 @@
 .kadus-row {
     margin-top: 40px;
     border-top: 2px solid #333;
+}
+
+@media (max-width: 768px) {
+    /* 1. Reset Kontainer Utama */
+    .tree ul {
+        display: block; /* Mengubah flex menjadi blok vertikal */
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .tree li {
+        display: block;
+        float: none;
+        width: 100%;
+        padding: 10px 0;
+        text-align: left; /* Teks rata kiri agar lebih natural sebagai list */
+    }
+
+    /* 2. Hapus Semua Garis Penghubung */
+    .tree li::before, 
+    .tree li::after,
+    .tree ul ul::before,
+    .kadus-row {
+        display: none !important;
+        border: none !important;
+    }
+
+    /* 3. Styling Ulang Kotak Menjadi List Item */
+    .tree li a {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        border-radius: 8px;
+        box-sizing: border-box; /* Agar padding tidak merusak lebar */
+        text-align: center; /* Tetap tengah di dalam kotak atau ganti ke left */
+    }
+
+    /* 4. Opsional: Memberikan Indentasi (Menjorok) untuk Hirarki */
+    .tree ul ul {
+        padding-left: 30px; /* Menandakan tingkat jabatan di bawahnya */
+    }
 }
 
         /* --- FOOTER --- */
